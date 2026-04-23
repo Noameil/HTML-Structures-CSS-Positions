@@ -8,53 +8,47 @@ a {
 }
 
 body {
-  height: 100vh;
-  overflow-x: hidden;
+  height: 3000px;
+  width: 1200px;
 
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
 
 /* Header */
 
 header {
-  width: 100%;
-  height: 10%;
+  height: 128px;
+  width: 1200px;
+  font-family: "Nunito", sans-serif;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 
-  padding: 1% 3%;
-
-  font-family: "Nunito", sans-serif;
+  background-color: aqua;
 }
 
-.pops-logo {
+nav {
+  height: 64px;
+  width: 1064px;
+
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  width: 20%;
-
-  font-family: "Nunito", sans-serif;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.pops-logo > a {
+.nav-left {
   display: flex;
   align-items: center;
 }
 
-.pops-logo > a > img {
-  height: 100%;
-  width: 100%;
+.pops-logo {
+  height: 64px;
+  width: 64px;
 }
 
-.pops-logo > span {
-  width: 100%;
-  align-self: center;
-
+.nav-left > span {
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -63,26 +57,29 @@ header {
   color: #3e3f43;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 70%;
+.nav-left > span:hover {
+  cursor: pointer;
+}
 
-  font-family: "Nunito", sans-serif;
+.nav-right {
+  display: flex;
+  gap: 50px;
 }
 
 #home {
   font-weight: 700;
 }
 
-nav > a {
+.navbar-item {
   font-weight: 400;
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #612999;
+}
+
+nav {
+  font-family: "Nunito", sans-serif;
 }
 
 /* Wrapper */
@@ -93,14 +90,11 @@ nav > a {
 /* Main */
 
 main {
-  height: 75%;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-top {
-  flex: 0 0 40%;
-  padding: 1% 3%;
+  height: 797px;
+  width: 1200px;
 
   font-family: "Nunito", sans-serif;
   background-image: url(../images/enjoy-background.png);
@@ -109,7 +103,16 @@ main {
   background-repeat: no-repeat;
 }
 
-.main-top > h1 {
+.main-top > div {
+  height: 230px;
+  width: 448px;
+
+  position: relative;
+  top: 70px;
+  left: 32px;
+}
+
+.main-top > div > h1 {
   font-weight: 800;
   font-style: ExtraBold;
   font-size: 96px;
@@ -118,9 +121,7 @@ main {
   color: #612999;
 }
 
-.main-top > p {
-  width: 30%;
-
+.main-top > div > p {
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
@@ -129,13 +130,100 @@ main {
 }
 
 .main-middle {
-  flex: 0 0 30%;
+  height: 382px;
+  width: 1136px;
+  padding: 0px 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: chocolate;
+}
+
+.main-middle > h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #612999;
+}
+
+.main-middle > p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 141%;
+  letter-spacing: 0%;
+  color: #000000;
 }
 
 .main-bottom {
-  flex: 0 0 40%;
+  height: 1096px;
+  width: 784px;
+  padding: 32px;
+
+  background-color: beige;
+}
+
+.main-bottom > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.main-bottom > h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #612999;
+}
+
+.card {
+  height: 496px;
+  width: 376px;
+  border-radius: 38px;
+
+  display: flex inline-block;
+
+  background-color: blueviolet;
+}
+
+.card-top {
+  height: 248px;
+  width: 376px;
+  border-radius: 38px;
+}
+
+#dor-funko {
+  background: url(../images/Dor_Funko.png) no-repeat center;
+  background-size: cover;
+  background-position-y: -125px;
+}
+
+#alex-funko {
+  background: url(../images/Alex_funko.png) no-repeat center;
+  background-size: cover;
+  background-position-y: -90px;
+}
+
+#noam-funko {
+  background: url(../images/noam_funko.png) no-repeat center;
+  background-size: cover;
+  background-position-y: -90px;
+}
+
+#amit-and-shelly-funko {
+  background: url(../images/amit_and_shelly_funko.png) no-repeat center;
+  background-size: cover;
 }
 
 footer {
-  height: 15%;
+  height: 287px;
+  width: 1200px;
+
+  background-color: chartreuse;
 }
